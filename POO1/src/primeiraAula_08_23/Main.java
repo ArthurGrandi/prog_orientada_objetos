@@ -1,4 +1,5 @@
 package primeiraAula_08_23;
+
 public class Main {
     public static void main(String[] args) throws Exception {
         Veiculos minivan = new Veiculos(7,80,9);
@@ -9,7 +10,7 @@ public class Main {
 
         System.out.println("com uma autonomia de " + minivan.calcularConsumo() + " quilômetros");
 
-        System.out.print("Carro esporte pode transportar " + sportcar.getPassageiros() + "passageiros ");
+        System.out.print("Carro esporte pode transportar " + sportcar.getPassageiros() + " passageiros ");
 
         System.out.println("com uma autonomia de " + sportcar.calcularConsumo() + " quilômetros");
     }

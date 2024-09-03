@@ -1,9 +1,9 @@
 package primeiraAula_08_23;
+
 public class Veiculos {
+    
     private int passageiros;
-
     private int combustivel; 
-
     private int consumo; 
 
     public Veiculos(int pass, int comb, int cons){
