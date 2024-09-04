@@ -7,6 +7,6 @@ public class Main {
 
     System.out.println("Eu tenho uma bola de futebol ela é da cor " + futebol.mostraCor() + " eu amo ela");
 
-    System.out.println("A bola caiu em um balde de tinta e mudou de cor agora ela é " + futebol.trocaCor());
+    System.out.println("A bola caiu em um balde de tinta e mudou de cor, agora ela é " + futebol.trocaCor());
     }
 }

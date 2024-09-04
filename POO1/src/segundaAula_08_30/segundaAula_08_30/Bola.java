@@ -7,12 +7,14 @@ public class Bola {
     private String material;
     private double circunferencia;
 
+    // Construtor
     public Bola(String cor, String material, double circunferencia){
         this.cor = cor;
         this.material = material;
         this.circunferencia = circunferencia;
     }
 
+    // Métodos
     public String trocaCor() {
         return (this.cor = "Vermelha");
     }
