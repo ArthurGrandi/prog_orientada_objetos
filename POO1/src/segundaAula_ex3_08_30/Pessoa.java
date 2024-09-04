@@ -18,21 +18,25 @@ public class Pessoa {
 
     //Métodos
 
-    public int envelhecer(){
-        return();
+    public void envelhecer(){
+        this.idade += 1;
     }
 
-    public int emagrecer(){
-        return();
+    public int getEvencelher(){
+        return (this.idade);
     }
 
+    public void emagrecer(){
+        this.peso -= 1;
+    }
     
-    public int engordar(){
-        return();
+    public void engordar(){
+        this.peso += 1;
     }
-
     
-    public int crescer(){
-        return();
+    public void crescer(){
+        if (idade < 21 ){
+            altura += 0.5;
+        }
     }
 }
