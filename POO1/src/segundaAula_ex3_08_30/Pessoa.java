@@ -20,6 +20,9 @@ public class Pessoa {
 
     public void envelhecer(){
         this.idade += 1;
+        if (idade < 21 ){
+            altura += 0.05;
+        }
     }
 
     public int getEvencelher(){
@@ -29,14 +32,20 @@ public class Pessoa {
     public void emagrecer(){
         this.peso -= 1;
     }
+
+    public double getEmagrecer(){
+        return (this.peso);
+    }
     
     public void engordar(){
         this.peso += 1;
     }
-    
-    public void crescer(){
-        if (idade < 21 ){
-            altura += 0.5;
-        }
+
+    public double getEngordar(){
+        return (this.peso);
+    }
+
+    public double getAltura(){
+        return (this.altura);
     }
 }
