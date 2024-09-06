@@ -22,4 +22,21 @@ public class Bola {
     public String mostraCor() {
         return this.cor;
     }
+
+    public String getMaterial() {
+        return material;
+    }
+
+    public void setMaterial(String material) {
+        this.material = material;
+    }
+
+    public double getCircunferencia() {
+        return circunferencia;
+    }
+
+    public void setCircunferencia(double circunferencia) {
+        this.circunferencia = circunferencia;
+    }
+
 }

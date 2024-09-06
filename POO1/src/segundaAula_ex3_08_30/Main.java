@@ -7,8 +7,6 @@ public class Main {
 
         Pessoa matheus = new Pessoa("Matheus", 14, 70, 1.75);
 
-        Pessoa lucas = new Pessoa("Lucas", 20, 60, 1.72);
-
         System.out.println("x-----------------------x");
 
         System.out.println("Arthur esta indo na academia frequentemente, seu peso atual é: " + arthur.getEmagrecer() + " kg!");

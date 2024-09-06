@@ -48,4 +48,10 @@ public class Pessoa {
     public double getAltura(){
         return (this.altura);
     }
+
+    @Override
+    public String toString() {
+        return "Pessoa [nome=" + nome + ", idade=" + idade + ", peso=" + peso + ", altura=" + altura + "]";
+    }
+
 }
