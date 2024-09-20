@@ -2,19 +2,19 @@ package segundaAula_08_30;
 
 public class Bola {
 
-    // Atributos
+// Atributos
     private String cor; 
     private String material;
     private double circunferencia;
 
-    // Construtor
+// Construtor
     public Bola(String cor, String material, double circunferencia){
         this.cor = cor;
         this.material = material;
         this.circunferencia = circunferencia;
     }
 
-    // Métodos
+// Métodos
     public String trocaCor() {
         return (this.cor = "Vermelha");
     }
@@ -38,5 +38,4 @@ public class Bola {
     public void setCircunferencia(double circunferencia) {
         this.circunferencia = circunferencia;
     }
-
 }
