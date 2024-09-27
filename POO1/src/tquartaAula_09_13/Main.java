@@ -3,11 +3,14 @@ package tquartaAula_09_13;
 public class Main {
     public static void main(String[] args) throws Exception {
 
-    Corrente conta1 = new Corrente(1, 1000, "Ana");
-    Especial conta2 = new Especial(2, 2000, "Joao", 5000);
-    Poupanca conta3 = new Poupanca(3,1000, "Claudia",1000);
-    Investimento conta4 = new Investimento(4, 1000, "Cida", 1, 12);
-    Investimento conta5 = new Investimento(5, 1000, "Eva", 22, 5);
+    Clientes cli1 = new Clientes("Joice", "23433378921");
+    Corrente conta1 = new Corrente(1, 1000, cli1);
+    Especial conta2 = new Especial(2, 2000, cli1, 5000);
+    Poupanca conta3 = new Poupanca(3,1000, cli1,1000);
+    Investimento conta4 = new Investimento(4, 1000, cli1, 1, 12);
+    Investimento conta5 = new Investimento(5, 1000, cli1, 22, 5);
+
+    System.out.println(conta1);
 
 //Conta Poupança
     conta3.debitar(1500);
@@ -44,4 +47,5 @@ public class Main {
     conta5.atualizarSaldo();
         System.out.println("Seu saldo é: " + conta5.getSaldo());
         }
+
 }

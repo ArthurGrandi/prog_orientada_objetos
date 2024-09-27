@@ -4,9 +4,9 @@ public class Corrente {
 
     private int numero;
     private double saldo;
-    private String cliente;
+    private Clientes cliente;
 
-    public Corrente(int num, double sal, String cli) {
+    public Corrente(int num, double sal, Clientes cli) {
         this.numero = num;
         this.saldo = sal;
         this.cliente = cli;
@@ -30,5 +30,10 @@ public class Corrente {
 
     public void setSaldo(double saldo) {
         this.saldo = saldo;
+    }
+
+    @Override
+    public String toString() {
+        return "Corrente [numero=" + numero + ", saldo=" + saldo + ", cliente=" + cliente + "]";
     }
 }

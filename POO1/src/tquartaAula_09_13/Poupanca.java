@@ -4,7 +4,7 @@ public class Poupanca extends Corrente {
 
     private double saldominimo;
 
-    public Poupanca(int num, double sal, String cli, double salmin) {
+    public Poupanca(int num, double sal, Clientes cli, double salmin) {
         super(num, sal, cli);
         this.saldominimo = salmin;
     }
