@@ -16,19 +16,10 @@ public Empregado(int codigo, String nome, String email, double salario) {
         this.salario = salario;
 }
 
-// Métodos
-public double aumento_salarial_empregado(double percentual){
-    setSalario((salario * (percentual / 100)) + salario);
-    return salario;
-}
-public double aumento_salarial_chefe(double percentual){
-    setSalario((salario * (percentual / 100)) + salario + beneficio);
-    return salario;
-}
-public double aumento_salarial_estagiario(double percentual){
-    setSalario((salario * (percentual / 100)) + salario - descontos);
-    return salario;
-}
+    // Método de aumento salarial padrão para empregados
+    public void aumento_salarial(double percentual){
+        this.salario += this.salario * (percentual / 100);
+    }
 
 public int getCodigo() {
         return codigo;

@@ -1,27 +1,33 @@
 package tquintaAula_ex1_09_20;
 
-class Estagiario extends Empregado{
+class Estagiario extends Empregado {
 
-// Atributos
-private int descontos;
+    // Atributos
+    private double descontos;
 
-// Construtor
-public Estagiario(int codigo, String nome, String email, double salario , int descontos){
-    super(codigo,nome,email,salario);
-    this.descontos = descontos;
-}
+    // Construtor
+    public Estagiario(int codigo, String nome, String email, double salario, double descontos) {
+        super(codigo, nome, email, salario);  // Chama o construtor da superclasse
+        this.descontos = descontos;           // Inicializa o atributo descontos
+    }
 
-// Métodos
-public int getDescontos() {
-    return descontos;
-}
+    // Método de aumento salarial para estagiário
+    public void aumento_salarial(double percentual) {
+        double novoSalario = getSalario() + (getSalario() * (percentual / 100)) - descontos;
+        setSalario(novoSalario);
+    }
 
-public void setDescontos(int descontos) {
-    this.descontos = descontos;
-}
+    // Getters e Setters
+    public double getDescontos() {
+        return descontos;
+    }
 
-@Override
-public String toString() {
-    return "estagiario [descontos=" + descontos + "]";
-}
+    public void setDescontos(double descontos) {
+        this.descontos = descontos;
+    }
+
+    @Override
+    public String toString() {
+        return "Estagiario [descontos=" + descontos + ", salario=" + getSalario() + "]";
+    }
 }
