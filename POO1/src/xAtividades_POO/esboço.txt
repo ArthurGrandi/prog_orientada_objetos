@@ -1,0 +1,56 @@
+        Poupanca conta3 = new Poupanca(3,1000, "Claudia",1000);
+        Investimento conta4 = new Investimento(4, 1000, "Cida", 1, 12);
+        Investimento conta5 = new Investimento(5, 1000, "Eva", 22, 5);
+
+        conta3.debitar(500);
+        System.out.println("Seu saldo: " + conta3.getSaldo());
+        System.out.println("Seu saldo mínimo: " + conta3.getSaldominimo());
+        conta3.creditar(1500);
+        System.out.println("Seu saldo: " + conta3.getSaldo());
+        System.out.println("Seu saldo mínimo: " + conta3.getSaldominimo());
+        conta3.atualizarSaldo();
+        System.out.println("Seu saldo: " + conta3.getSaldo());
+        System.out.println("Seu saldo mínimo: " + conta3.getSaldominimo());
+        System.out.println("----------------------------------------");
+
+        conta4.atualizarSaldo();
+        System.out.println("Seu saldo é: " + conta4.getSaldo());
+        conta5.atualizarSaldo();
+        System.out.println("Seu saldo é: " + conta5.getSaldo());
+        -------------------------------------------------------------------
+
+        Corrente cc1 = new Corrente(1, 1000, cli1);
+        Poupanca cc2 = new Poupanca(2, 2500, cli2, 1500); 
+        Investimento cc3 = new Investimento(3, 3300, cli3, 1, 12); 
+
+        cc2.debitar(500);
+        System.out.println("Seu saldo: " + cc2.getSaldo());
+        System.out.println("Seu saldo mínimo: " + cc2.getSaldominimo());
+        cc2.creditar(1500);
+        System.out.println("Seu saldo: " + cc2.getSaldo());
+        System.out.println("Seu saldo mínimo: " + cc2.getSaldominimo());
+        cc2.atualizarSaldo();
+        System.out.println("Seu saldo: " + cc2.getSaldo());
+        System.out.println("Seu saldo mínimo: " + cc2.getSaldominimo());
+        System.out.println("----------------------------------------");
+        
+        System.out.println(cc1);
+        System.out.println(cc2);
+        System.out.println(cc3);
+
+        
+    ///@Override
+    ///public String toString(){
+    ///return ("Conta:" + super.getNumero() + " Saldo:" + super.getSaldo() + super.getCliente());
+    ///}
+
+            ///@Override
+    ///public String toString(){
+    ///return ("Conta:" + super.getNumero() + " Saldo:" + super.getSaldo() + super.getCliente());
+    ///}
+
+       //@Override
+    //public String toString(){
+    //return ("Conta:" + this.numero + " Saldo:" + this.saldo + super.cliente);
+    
+    //}

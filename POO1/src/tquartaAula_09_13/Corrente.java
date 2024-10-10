@@ -1,24 +1,22 @@
 package tquartaAula_09_13;
 
 public class Corrente {
-
     private int numero;
     private double saldo;
-    private Clientes cliente;
+    private Cliente cliente;
 
-    public Corrente(int num, double sal, Clientes cli) {
+    public Corrente(int num, double sal) {
         this.numero = num;
         this.saldo = sal;
-        this.cliente = cli;
     }
 
     public void creditar(double valor) {
-        this.saldo = this.saldo + valor;
+        this.saldo += valor;
     }
 
     public void debitar(double valor) {
         if (valor <= this.saldo) {
-            this.saldo = this.saldo - valor;
+            this.saldo -= valor;
         } else {
             System.out.println("Saldo Insuficiente");
         }
@@ -32,8 +30,25 @@ public class Corrente {
         this.saldo = saldo;
     }
 
+    public int getNumero() {
+        return numero;
+    }
+
+    public void setNumero(int numero) {
+        this.numero = numero;
+    }
+
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
+    }
+
     @Override
     public String toString() {
-        return "Corrente [numero=" + numero + ", saldo=" + saldo + ", cliente=" + cliente + "]";
+        String clienteNome = (cliente != null) ? cliente.getNome() : "Sem Cliente";
+        return "Conta: " + this.numero + " | Saldo: " + this.saldo + " | Cliente: " + clienteNome;
     }
 }

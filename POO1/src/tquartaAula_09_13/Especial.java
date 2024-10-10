@@ -1,10 +1,10 @@
 package tquartaAula_09_13;
 
 public class Especial extends Corrente {
-    private int limite;
+    private final int limite;
 
-    public Especial(int num, double sal, Clientes cli, int lim) {
-        super(num, sal, cli);
+    public Especial(int num, double sal, int lim) {
+        super(num, sal);
         this.limite = lim;
     }
 
@@ -16,5 +16,4 @@ public class Especial extends Corrente {
             System.out.println("Saldo Insuficiente");
         }
     }
-
 }
